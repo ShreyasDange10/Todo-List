@@ -24,7 +24,6 @@ var corsOptions = {
 
 app.use(cors(corsOptions));
 
-
 mongoose.connect(`mongodb+srv://ShreyasD:bKLFTxrn1UxzrV0q@cluster0.agpjzqh.mongodb.net/todoApp`)
   .then(() => console.log('Connected to database!'))
   .catch(error =>console.log(`Error connecting to database: ${error}`))
@@ -33,4 +32,7 @@ app.listen(port, ()=>{
     console.log(`App is listening on port ${port}`);
 })  
 
+app.use('/', (req, res) =>{
+  res.send("Server is running");
+})
 app.use('/todo', trouter);
