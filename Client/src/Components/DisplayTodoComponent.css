@@ -1,0 +1,44 @@
+.allTasks{
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px 10px;
+   
+}
+
+.allTasks button{
+    display: flex;
+    align-items: center;
+}
+
+.main{
+    border-bottom: 1px solid silver;
+    align-items: center;
+    padding: 20px 20px 10px;
+}
+
+.delete{
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+.delete:hover{
+    background-color: white;
+    color: red;
+    border:1px solid red;
+}
+
+h5 span{
+    background-color: #7098ff;
+    padding: 3px 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.delete{
+    font-size: 18px;
+}
+
+.complete{
+    text-decoration: line-through;
+}
